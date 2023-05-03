@@ -17,8 +17,10 @@ const WatchPage = () => {
     setCommentList(json?.items);
   };
 
+
   useEffect(() => {
     getComments();
+    
   }, []);
 
   return (

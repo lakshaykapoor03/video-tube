@@ -5,6 +5,7 @@ import Header from './Components.js/Header';
 import WatchPage from './Components.js/WatchPage';
 import { Provider } from 'react-redux';
 import Store from './Utils.js/Store';
+import Results from './Components.js/Results';
 
 function App() {
   return (
@@ -30,6 +31,10 @@ export const appRouter = createBrowserRouter([
        {
         path:"/watch",
       element:<WatchPage/>
+      },
+       {
+        path:"/results",
+      element:<Results/>
       }
 
     ]
